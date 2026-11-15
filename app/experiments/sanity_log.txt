@@ -1,0 +1,2 @@
+heart: real labels 0.672 | shuffled labels 0.104 (max 0.215 over 10 shuffles) | chance 0.100
+lung: real labels 0.959 | shuffled labels 0.185 (max 0.275 over 10 shuffles) | chance 0.167

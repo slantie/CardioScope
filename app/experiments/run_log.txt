@@ -1,0 +1,172 @@
+
+================ HEART ================
+rows 195, unique clips 107
+unique clips per class: {'Mid Systolic Murmur': np.int64(14), 'Early Systolic Murmur': np.int64(14), 'Normal': np.int64(12), 'S3': np.int64(12), 'Atrial Fibrillation': np.int64(11), 'Late Diastolic Murmur': np.int64(10), 'S4': np.int64(10), 'AV Block': np.int64(9), 'Tachycardia': np.int64(8), 'Late Systolic Murmur': np.int64(7)}
+features computed in 8s (80 rich features, 1755 windows)
+  E0 baseline LR (decision.py)       seed 42    type acc 0.436 +- 0.070  N/A bal 0.562 +- 0.079  (0.0s)
+  E0 baseline LR (decision.py)       seed 7     type acc 0.421 +- 0.116  N/A bal 0.460 +- 0.014  (0.0s)
+  E0 baseline LR (decision.py)       seed 2024  type acc 0.467 +- 0.114  N/A bal 0.493 +- 0.032  (0.0s)
+  E1 LR  base+location               seed 42    type acc 0.281 +- 0.079  N/A bal 0.456 +- 0.098  (0.0s)
+  E1 LR  base+location               seed 7     type acc 0.292 +- 0.078  N/A bal 0.456 +- 0.037  (0.0s)
+  E1 LR  base+location               seed 2024  type acc 0.328 +- 0.095  N/A bal 0.502 +- 0.086  (0.0s)
+  E1 LR  base+MFCC                   seed 42    type acc 0.672 +- 0.050  N/A bal 0.581 +- 0.109  (0.0s)
+  E1 LR  base+MFCC                   seed 7     type acc 0.636 +- 0.065  N/A bal 0.574 +- 0.105  (0.0s)
+  E1 LR  base+MFCC                   seed 2024  type acc 0.621 +- 0.068  N/A bal 0.530 +- 0.092  (0.0s)
+  E1 RF  base+MFCC                   seed 42    type acc 0.574 +- 0.044  N/A bal 0.495 +- 0.049  (1.0s)
+  E1 RF  base+MFCC                   seed 7     type acc 0.605 +- 0.078  N/A bal 0.486 +- 0.089  (1.0s)
+  E1 RF  base+MFCC                   seed 2024  type acc 0.605 +- 0.058  N/A bal 0.496 +- 0.046  (1.0s)
+  E1 HGB base+MFCC                   seed 42    type acc 0.532 +- 0.147  N/A bal 0.632 +- 0.143  (6.8s)
+  E1 HGB base+MFCC                   seed 7     type acc 0.615 +- 0.042  N/A bal 0.577 +- 0.159  (10.7s)
+  E1 HGB base+MFCC                   seed 2024  type acc 0.544 +- 0.068  N/A bal 0.626 +- 0.214  (7.4s)
+  E1 SVM base+MFCC                   seed 42    type acc 0.589 +- 0.084  N/A bal 0.504 +- 0.059  (0.1s)
+  E1 SVM base+MFCC                   seed 7     type acc 0.610 +- 0.053  N/A bal 0.571 +- 0.132  (0.1s)
+  E1 SVM base+MFCC                   seed 2024  type acc 0.631 +- 0.103  N/A bal 0.623 +- 0.145  (0.1s)
+  E1 RF  base+MFCC+location          seed 42    type acc 0.553 +- 0.071  N/A bal 0.459 +- 0.025  (1.1s)
+  E1 RF  base+MFCC+location          seed 7     type acc 0.615 +- 0.068  N/A bal 0.492 +- 0.092  (1.0s)
+  E1 RF  base+MFCC+location          seed 2024  type acc 0.610 +- 0.080  N/A bal 0.487 +- 0.050  (1.0s)
+  E1 SVM base+MFCC+location          seed 42    type acc 0.609 +- 0.063  N/A bal 0.534 +- 0.065  (0.0s)
+  E1 SVM base+MFCC+location          seed 7     type acc 0.539 +- 0.072  N/A bal 0.549 +- 0.132  (0.0s)
+  E1 SVM base+MFCC+location          seed 2024  type acc 0.569 +- 0.075  N/A bal 0.576 +- 0.147  (0.0s)
+  E2 windows LR  base+MFCC           seed 42    type acc 0.646 +- 0.069  N/A bal 0.631 +- 0.142  (0.1s)
+  E2 windows LR  base+MFCC           seed 7     type acc 0.620 +- 0.036  N/A bal 0.570 +- 0.107  (0.1s)
+  E2 windows LR  base+MFCC           seed 2024  type acc 0.656 +- 0.085  N/A bal 0.699 +- 0.153  (0.1s)
+  E2 windows RF  base+MFCC           seed 42    type acc 0.585 +- 0.066  N/A bal 0.538 +- 0.086  (5.7s)
+  E2 windows RF  base+MFCC           seed 7     type acc 0.600 +- 0.098  N/A bal 0.523 +- 0.118  (5.7s)
+  E2 windows RF  base+MFCC           seed 2024  type acc 0.667 +- 0.078  N/A bal 0.675 +- 0.099  (5.9s)
+  E2 windows SVM base+MFCC           seed 42    type acc 0.682 +- 0.050  N/A bal 0.691 +- 0.137  (0.6s)
+  E2 windows SVM base+MFCC           seed 7     type acc 0.646 +- 0.057  N/A bal 0.587 +- 0.199  (0.6s)
+  E2 windows SVM base+MFCC           seed 2024  type acc 0.621 +- 0.071  N/A bal 0.640 +- 0.141  (0.6s)
+  E4 augment LR  base+MFCC           seed 42    type acc 0.652 +- 0.056  N/A bal 0.587 +- 0.101  (0.0s)
+  E4 augment LR  base+MFCC           seed 7     type acc 0.625 +- 0.068  N/A bal 0.547 +- 0.119  (0.0s)
+  E4 augment LR  base+MFCC           seed 2024  type acc 0.595 +- 0.123  N/A bal 0.499 +- 0.098  (0.0s)
+  E4 augment RF  base+MFCC           seed 42    type acc 0.590 +- 0.043  N/A bal 0.641 +- 0.154  (1.4s)
+  E4 augment RF  base+MFCC           seed 7     type acc 0.574 +- 0.111  N/A bal 0.501 +- 0.089  (1.5s)
+  E4 augment RF  base+MFCC           seed 2024  type acc 0.631 +- 0.111  N/A bal 0.643 +- 0.186  (1.4s)
+  E4 augment SVM base+MFCC           seed 42    type acc 0.630 +- 0.074  N/A bal 0.628 +- 0.052  (0.2s)
+  E4 augment SVM base+MFCC           seed 7     type acc 0.548 +- 0.035  N/A bal 0.554 +- 0.128  (0.2s)
+  E4 augment SVM base+MFCC           seed 2024  type acc 0.600 +- 0.107  N/A bal 0.550 +- 0.102  (0.2s)
+  E1 nested selection (inner CV)     seed 42    type acc 0.630 +- 0.065  N/A bal 0.521 +- 0.061  (36.1s)
+     models chosen per outer fold: ['LR-rich', 'LR-rich', 'LR-rich', 'RF-rich', 'LR-rich']
+  E1 nested selection (inner CV)     seed 7     type acc 0.590 +- 0.032  N/A bal 0.542 +- 0.094  (41.9s)
+     models chosen per outer fold: ['RF-rich', 'LR-rich', 'RF-rich', 'LR-rich', 'LR-rich']
+  E1 nested selection (inner CV)     seed 2024  type acc 0.610 +- 0.071  N/A bal 0.530 +- 0.092  (28.3s)
+     models chosen per outer fold: ['LR-rich', 'LR-rich', 'LR-rich', 'RF-rich', 'LR-rich']
+     per-class recall, E1 LR base+MFCC, seed 42:
+       AV Block                 0.31  (n rows 16)
+       Atrial Fibrillation      0.32  (n rows 19)
+       Early Systolic Murmur    0.95  (n rows 19)
+       Late Diastolic Murmur    0.84  (n rows 19)
+       Late Systolic Murmur     0.95  (n rows 22)
+       Mid Systolic Murmur      0.86  (n rows 21)
+       Normal                   0.27  (n rows 22)
+       S3                       0.75  (n rows 20)
+       S4                       0.72  (n rows 18)
+       Tachycardia              0.68  (n rows 19)
+     accuracy counting each unique clip once: 0.673
+  E5 binary N/A  LR base             seed 42    N/A bal 0.586 +- 0.210
+  E5 binary N/A  LR base             seed 7     N/A bal 0.431 +- 0.150
+  E5 binary N/A  LR base             seed 2024  N/A bal 0.568 +- 0.184
+  E5 binary N/A  LR base+MFCC        seed 42    N/A bal 0.561 +- 0.187
+  E5 binary N/A  LR base+MFCC        seed 7     N/A bal 0.490 +- 0.072
+  E5 binary N/A  LR base+MFCC        seed 2024  N/A bal 0.445 +- 0.030
+  E5 binary N/A  RF base+MFCC        seed 42    N/A bal 0.488 +- 0.017
+  E5 binary N/A  RF base+MFCC        seed 7     N/A bal 0.485 +- 0.029
+  E5 binary N/A  RF base+MFCC        seed 2024  N/A bal 0.483 +- 0.021
+  E3 LSTM log-mel 3s windows +aug    seed 42    type acc 0.543 +- 0.086  N/A bal 0.548 +- 0.132  (40.9s)
+  E3 LSTM log-mel 3s windows +aug    seed 7     type acc 0.486 +- 0.115  N/A bal 0.539 +- 0.136  (36.5s)
+  E3 LSTM log-mel 3s windows +aug    seed 2024  type acc 0.549 +- 0.087  N/A bal 0.647 +- 0.138  (38.0s)
+  E3 CNN log-mel 3s windows +aug     seed 42    type acc 0.388 +- 0.186  N/A bal 0.483 +- 0.042  (119.6s)
+
+================ LUNG ================
+rows 195, unique clips 94
+unique clips per class: {'Pleural Rub': np.int64(18), 'Rhonchi': np.int64(17), 'Normal': np.int64(16), 'Coarse Crackles': np.int64(16), 'Wheezing': np.int64(14), 'Fine Crackles': np.int64(13)}
+features computed in 10s (80 rich features, 1755 windows)
+  E0 baseline LR (decision.py)       seed 42    type acc 0.667 +- 0.073  N/A bal 0.867 +- 0.140  (0.0s)
+  E0 baseline LR (decision.py)       seed 7     type acc 0.585 +- 0.092  N/A bal 0.815 +- 0.186  (0.0s)
+  E0 baseline LR (decision.py)       seed 2024  type acc 0.668 +- 0.117  N/A bal 0.871 +- 0.163  (0.0s)
+  E1 LR  base+location               seed 42    type acc 0.431 +- 0.102  N/A bal 0.708 +- 0.155  (0.0s)
+  E1 LR  base+location               seed 7     type acc 0.421 +- 0.131  N/A bal 0.701 +- 0.200  (0.0s)
+  E1 LR  base+location               seed 2024  type acc 0.447 +- 0.161  N/A bal 0.761 +- 0.102  (0.0s)
+  E1 LR  base+MFCC                   seed 42    type acc 0.959 +- 0.048  N/A bal 0.959 +- 0.052  (0.0s)
+  E1 LR  base+MFCC                   seed 7     type acc 0.974 +- 0.023  N/A bal 0.975 +- 0.050  (0.0s)
+  E1 LR  base+MFCC                   seed 2024  type acc 0.984 +- 0.021  N/A bal 0.975 +- 0.050  (0.0s)
+  E1 RF  base+MFCC                   seed 42    type acc 0.867 +- 0.052  N/A bal 0.840 +- 0.145  (1.1s)
+  E1 RF  base+MFCC                   seed 7     type acc 0.918 +- 0.044  N/A bal 0.921 +- 0.068  (1.2s)
+  E1 RF  base+MFCC                   seed 2024  type acc 0.866 +- 0.035  N/A bal 0.887 +- 0.138  (1.2s)
+  E1 HGB base+MFCC                   seed 42    type acc 0.795 +- 0.081  N/A bal 0.806 +- 0.106  (3.3s)
+  E1 HGB base+MFCC                   seed 7     type acc 0.913 +- 0.027  N/A bal 0.931 +- 0.075  (3.2s)
+  E1 HGB base+MFCC                   seed 2024  type acc 0.840 +- 0.052  N/A bal 0.853 +- 0.131  (3.1s)
+  E1 SVM base+MFCC                   seed 42    type acc 0.923 +- 0.092  N/A bal 0.949 +- 0.056  (0.1s)
+  E1 SVM base+MFCC                   seed 7     type acc 0.928 +- 0.049  N/A bal 0.956 +- 0.047  (0.1s)
+  E1 SVM base+MFCC                   seed 2024  type acc 0.917 +- 0.051  N/A bal 0.925 +- 0.100  (0.1s)
+  E1 RF  base+MFCC+location          seed 42    type acc 0.877 +- 0.077  N/A bal 0.881 +- 0.144  (1.3s)
+  E1 RF  base+MFCC+location          seed 7     type acc 0.892 +- 0.018  N/A bal 0.921 +- 0.068  (1.1s)
+  E1 RF  base+MFCC+location          seed 2024  type acc 0.866 +- 0.035  N/A bal 0.887 +- 0.138  (1.1s)
+  E1 SVM base+MFCC+location          seed 42    type acc 0.908 +- 0.093  N/A bal 0.912 +- 0.079  (0.0s)
+  E1 SVM base+MFCC+location          seed 7     type acc 0.913 +- 0.051  N/A bal 0.922 +- 0.073  (0.0s)
+  E1 SVM base+MFCC+location          seed 2024  type acc 0.871 +- 0.047  N/A bal 0.878 +- 0.137  (0.0s)
+  E2 windows LR  base+MFCC           seed 42    type acc 0.979 +- 0.025  N/A bal 0.975 +- 0.050  (0.1s)
+  E2 windows LR  base+MFCC           seed 7     type acc 0.979 +- 0.025  N/A bal 0.975 +- 0.050  (0.1s)
+  E2 windows LR  base+MFCC           seed 2024  type acc 0.989 +- 0.021  N/A bal 0.975 +- 0.050  (0.1s)
+  E2 windows RF  base+MFCC           seed 42    type acc 0.913 +- 0.055  N/A bal 0.956 +- 0.073  (6.5s)
+  E2 windows RF  base+MFCC           seed 7     type acc 0.933 +- 0.038  N/A bal 0.959 +- 0.046  (6.4s)
+  E2 windows RF  base+MFCC           seed 2024  type acc 0.953 +- 0.051  N/A bal 0.975 +- 0.050  (6.5s)
+  E2 windows SVM base+MFCC           seed 42    type acc 0.979 +- 0.025  N/A bal 0.975 +- 0.050  (0.6s)
+  E2 windows SVM base+MFCC           seed 7     type acc 0.954 +- 0.041  N/A bal 0.966 +- 0.049  (0.6s)
+  E2 windows SVM base+MFCC           seed 2024  type acc 0.979 +- 0.042  N/A bal 0.975 +- 0.050  (0.6s)
+  E4 augment LR  base+MFCC           seed 42    type acc 0.969 +- 0.041  N/A bal 0.969 +- 0.048  (0.0s)
+  E4 augment LR  base+MFCC           seed 7     type acc 0.969 +- 0.025  N/A bal 0.975 +- 0.050  (0.0s)
+  E4 augment LR  base+MFCC           seed 2024  type acc 0.979 +- 0.025  N/A bal 0.975 +- 0.050  (0.0s)
+  E4 augment RF  base+MFCC           seed 42    type acc 0.836 +- 0.058  N/A bal 0.834 +- 0.132  (1.4s)
+  E4 augment RF  base+MFCC           seed 7     type acc 0.881 +- 0.068  N/A bal 0.844 +- 0.145  (1.5s)
+  E4 augment RF  base+MFCC           seed 2024  type acc 0.891 +- 0.094  N/A bal 0.847 +- 0.181  (1.4s)
+  E4 augment SVM base+MFCC           seed 42    type acc 0.938 +- 0.070  N/A bal 0.946 +- 0.068  (0.1s)
+  E4 augment SVM base+MFCC           seed 7     type acc 0.938 +- 0.048  N/A bal 0.950 +- 0.058  (0.1s)
+  E4 augment SVM base+MFCC           seed 2024  type acc 0.953 +- 0.059  N/A bal 0.963 +- 0.050  (0.1s)
+  E1 nested selection (inner CV)     seed 42    type acc 0.959 +- 0.048  N/A bal 0.959 +- 0.052  (16.3s)
+     models chosen per outer fold: ['LR-rich', 'LR-rich', 'LR-rich', 'LR-rich', 'LR-rich']
+  E1 nested selection (inner CV)     seed 7     type acc 0.974 +- 0.023  N/A bal 0.975 +- 0.050  (16.6s)
+     models chosen per outer fold: ['LR-rich', 'LR-rich', 'LR-rich', 'LR-rich', 'LR-rich']
+  E1 nested selection (inner CV)     seed 2024  type acc 0.984 +- 0.021  N/A bal 0.975 +- 0.050  (16.5s)
+     models chosen per outer fold: ['LR-rich', 'LR-rich', 'LR-rich', 'LR-rich', 'LR-rich']
+     per-class recall, E1 LR base+MFCC, seed 42:
+       Coarse Crackles          0.96  (n rows 28)
+       Fine Crackles            0.81  (n rows 27)
+       Normal                   0.95  (n rows 40)
+       Pleural Rub              1.00  (n rows 34)
+       Rhonchi                  1.00  (n rows 31)
+       Wheezing                 1.00  (n rows 35)
+     accuracy counting each unique clip once: 0.947
+  E3 LSTM log-mel 3s windows +aug    seed 42    type acc 0.856 +- 0.093  N/A bal 0.796 +- 0.121  (61.5s)
+  E3 LSTM log-mel 3s windows +aug    seed 7     type acc 0.847 +- 0.091  N/A bal 0.890 +- 0.164  (46.8s)
+  E3 LSTM log-mel 3s windows +aug    seed 2024  type acc 0.841 +- 0.126  N/A bal 0.868 +- 0.158  (65.7s)
+  E3 CNN log-mel 3s windows +aug     seed 42    type acc 0.226 +- 0.044  N/A bal 0.600 +- 0.108  (115.5s)
+
+
+SUMMARY  (seed 42: mean +- std over 5 grouped folds | mean over all seeds)
+experiment                                heart acc    heart N/A bal         lung acc     lung N/A bal  heart 3-seed  lung 3-seed
+E0 baseline LR (decision.py)         0.436 +- 0.070   0.562 +- 0.079   0.667 +- 0.073   0.867 +- 0.140         0.441        0.640
+E1 LR  base+location                 0.281 +- 0.079   0.456 +- 0.098   0.431 +- 0.102   0.708 +- 0.155         0.300        0.433
+E1 LR  base+MFCC                     0.672 +- 0.050   0.581 +- 0.109   0.959 +- 0.048   0.959 +- 0.052         0.643        0.973
+E1 RF  base+MFCC                     0.574 +- 0.044   0.495 +- 0.049   0.867 +- 0.052   0.840 +- 0.145         0.595        0.884
+E1 HGB base+MFCC                     0.532 +- 0.147   0.632 +- 0.143   0.795 +- 0.081   0.806 +- 0.106         0.564        0.849
+E1 SVM base+MFCC                     0.589 +- 0.084   0.504 +- 0.059   0.923 +- 0.092   0.949 +- 0.056         0.610        0.923
+E1 RF  base+MFCC+location            0.553 +- 0.071   0.459 +- 0.025   0.877 +- 0.077   0.881 +- 0.144         0.593        0.879
+E1 SVM base+MFCC+location            0.609 +- 0.063   0.534 +- 0.065   0.908 +- 0.093   0.912 +- 0.079         0.573        0.897
+E2 windows LR  base+MFCC             0.646 +- 0.069   0.631 +- 0.142   0.979 +- 0.025   0.975 +- 0.050         0.641        0.983
+E2 windows RF  base+MFCC             0.585 +- 0.066   0.538 +- 0.086   0.913 +- 0.055   0.956 +- 0.073         0.617        0.933
+E2 windows SVM base+MFCC             0.682 +- 0.050   0.691 +- 0.137   0.979 +- 0.025   0.975 +- 0.050         0.649        0.971
+E4 augment LR  base+MFCC             0.652 +- 0.056   0.587 +- 0.101   0.969 +- 0.041   0.969 +- 0.048         0.624        0.973
+E4 augment RF  base+MFCC             0.590 +- 0.043   0.641 +- 0.154   0.836 +- 0.058   0.834 +- 0.132         0.598        0.870
+E4 augment SVM base+MFCC             0.630 +- 0.074   0.628 +- 0.052   0.938 +- 0.070   0.946 +- 0.068         0.593        0.943
+E1 nested selection (inner CV)       0.630 +- 0.065   0.521 +- 0.061   0.959 +- 0.048   0.959 +- 0.052         0.610        0.973
+E5 binary N/A  LR base                            -   0.586 +- 0.210                -                -             -            -
+E5 binary N/A  LR base+MFCC                       -   0.561 +- 0.187                -                -             -            -
+E5 binary N/A  RF base+MFCC                       -   0.488 +- 0.017                -                -             -            -
+E3 LSTM log-mel 3s windows +aug      0.543 +- 0.086   0.548 +- 0.132   0.856 +- 0.093   0.796 +- 0.121         0.526        0.848
+E3 CNN log-mel 3s windows +aug       0.388 +- 0.186   0.483 +- 0.042   0.226 +- 0.044   0.600 +- 0.108         0.388        0.226
+
+total run time 806s
+real 807.34
+user 1668.14
+sys 806.76
